@@ -3,16 +3,9 @@ import requests
 from bs4 import BeautifulSoup
 import time
 from openpyxl import Workbook 
-#first_url = 'https://movie.douban.com/subject/26794994/comments?start=240&limit=20&sort=new_score&status=P&percent_type='
+
 first_url = 'https://www.rottentomatoes.com/m/peter_rabbit_2018/reviews/?page=1&sort='
-#first_url = 'https://movie.douban.com/subject/26649604/comments?status=F'
-# 请求头部
-headers = {
-    'Host':'movie.douban.com',
-    'Referer':'https://movie.douban.com/subject/26794994/?tag=%E7%83%AD%E9%97%A8&from=gaia_video',
-    'Upgrade-Insecure-Requests':'1',
-    'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
-}
+
 
 #allow_redirects=False
 def visit_URL(url):
